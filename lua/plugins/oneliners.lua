@@ -6,7 +6,7 @@ return {
         "tpope/vim-fugitive",
         config = function()
             vim.keymap.set("n", "<leader>gb", "<cmd>Git blame<CR>", { desc = "Toggle Git Blame" })
-        end
+        end,
     },
-
+    "christoomey/vim-tmux-navigator",
 }
