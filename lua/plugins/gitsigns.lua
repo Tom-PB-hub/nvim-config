@@ -14,5 +14,11 @@ return {
 
         vim.keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>", { desc = "Show a preview hunk" })
         vim.keymap.set("n", "<leader>gu", "<cmd>Gitsigns reset_hunk<CR>", { desc = "Undo/reset hunk" })
+        vim.keymap.set(
+            "n",
+            "<leader>gr",
+            "<cmd>Gitsigns reset_buffer<CR>",
+            { desc = "Reset entire buffer (all changes on current file)" }
+        )
     end,
 }
