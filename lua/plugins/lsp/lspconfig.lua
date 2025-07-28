@@ -30,11 +30,12 @@ return {
                 keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 
                 opts.desc = "Show LSP definitions"
-                --keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
-                vim.keymap.set("n", "gd", function()
+                keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
+
+                vim.keymap.set("n", "gv", function()
                     vim.cmd("vsplit")
                     require("telescope.builtin").lsp_definitions()
-                end, { desc = "Telescope: definition in vsplit" })
+                end, { desc = "Show LSP definitions in vsplit" })
 
                 opts.desc = "Show LSP implementations"
                 keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
