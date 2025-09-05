@@ -38,6 +38,7 @@ return {
                 "pyright",
                 "sqlls",
                 "yamlls",
+		"clangd",
             },
         })
 
@@ -46,7 +47,8 @@ return {
                 "prettier", -- prettier formatter
                 "stylua", -- lua formatter
                 "isort", -- python formatter
-                "black",
+                "black", -- python formatter
+		"clang-format", -- C formatter
             },
         })
     end,

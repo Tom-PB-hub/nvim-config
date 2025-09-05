@@ -142,5 +142,15 @@ return {
 	},
     })
 
+    vim.lsp.config("clangd", {
+      cmd = { "clangd", "--background-index", "--clang-tidy" },
+      capabilities = capabilities,
+      on_attach = function(client, bufnr)
+        -- on désactive le format via LSP pour laisser conform.nvim gérer clang-format
+        client.server_capabilities.documentFormattingProvider = false
+        client.server_capabilities.documentRangeFormattingProvider = false
+      end,
+    })
+
   end,
 }
