@@ -28,21 +28,21 @@ return {
 		    ⠈⠻⠿⠿⣟⣿⣿⣦⣤⣼⣿⣿⠿⠿⠟⠀
 		    ⠀⠀⠀⠀⠸⡿⣿⣿⢿⡿⢿⠇⠀⠀⠀⠀
 		    ⠀⠀⠀⠀⠀⠀⠈⠁⠈⠁⠀⠀⠀⠀⠀⠀
-                           _
-    _ __   ___ 	 _____   _(_)_ __ ___
-    | '_ \ / _ \/ _ \ \ / / | '_ ` _ \
-    | | | |  __/ (_) \ V /| | | | | | |
-    |_| |_|\___|\___/ \_/ |_|_| |_| |_|
+
+	    ▗▖  ▗▖▗▞▀▚▖ ▄▄▄  ▄   ▄ ▄ ▄▄▄▄  
+	    ▐▛▚▖▐▌▐▛▀▀▘█   █ █   █ ▄ █ █ █ 
+	    ▐▌ ▝▜▌▝▚▄▄▖▀▄▄▄▀  ▀▄▀  █ █   █ 
+	    ▐▌  ▐▌                 █       
 	]]
 
         dashboard.section.header.val = vim.split(logo, "\n")
         -- Set menu
         dashboard.section.buttons.val = {
             dashboard.button("e", "  > New file", "<cmd>ene<CR>"),
-            dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-            dashboard.button("SPC ff", "  > Find File", "<cmd>Telescope find_files<CR>"),
-            dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
-            dashboard.button("q", "⨷ > Quit Nvim", "<cmd>qa<CR>"),
+            dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
+            dashboard.button("SPC ff", "󰍉  > Find File", "<cmd>Telescope find_files<CR>"),
+            dashboard.button("SPC fg", "󰈞  > Find Word", "<cmd>Telescope live_grep<CR>"),
+            dashboard.button("q", "󰗼 > Quit Nvim", "<cmd>qa<CR>"),
         }
 
         -- Set footer
